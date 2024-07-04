@@ -98,3 +98,33 @@ header{
     background-color: #2B323D;
     text-decoration:line-through
 }
+
+@media screen and (max-width 600px) {
+    header {
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+ 
+    
+.input-task {
+    width: 200px;
+    font-size: 15px;
+
+}
+
+.list-task {
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.container {
+    margin: 100px auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+}
