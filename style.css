@@ -101,30 +101,26 @@ header{
 
 @media screen and (max-width 600px) {
     header {
-        flex-direction: column;
-        font-size: 15px;
+       padding: 15px;
     }
 
  
     
 .input-task {
-    width: 200px;
-    font-size: 15px;
+   padding: 10px;
 
 }
 
 .list-task {
-    width: 100%;
-    list-style: none;
-    margin-top: 30px;
+ padding: 15px;
 }
 
 .container {
-    margin: 100px auto;
+    padding: 15px;
 }
 
-body {
+/* body {
     overflow-x: hidden;
-}
+} */
 
 }
