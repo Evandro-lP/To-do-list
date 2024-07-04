@@ -48,6 +48,17 @@ body{
     opacity: 0.8;   
 }
 
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:85px;
+    /* background-color: #d1d1d1; */
+    width: 600px;
+    margin: auto auto auto;
+    border-radius: 10px;
+
+}
 .button:active{
     opacity: 0.6;
 }
