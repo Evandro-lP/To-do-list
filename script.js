@@ -22,9 +22,9 @@ function mostrarTarefa (){
     minhaListaDeItem.forEach((item,index) => {
         novaLi = novaLi + `
          <li class="task ${item.concluida && "done"}">
-          <img src="./img/checked.png" alt="check-na-tarefa" onclick="concluirTarefa(${index})"/>
+          <img src="./img/concluido.png" alt="check-na-tarefa" onclick="concluirTarefa(${index})"/>
           <p>${item.tarefa}</p>
-          <img src="./img/images.png" alt="deletar-tarefa" onclick="deletarTarefa(${index})" />
+          <img src="./img/delete.png" alt="deletar-tarefa" onclick="deletarTarefa(${index})" />
         </li>  
         `
     })
