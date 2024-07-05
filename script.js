@@ -4,15 +4,16 @@ const listaCompleta = document.querySelector('.list-task')
 
 let minhaListaDeItem = []
 
-function adicionarNovaTarefa (){
-    minhaListaDeItem.push({
-        tarefa: input.value,
-        concluida: false
-    })
+function adicionarNovaTarefa() {
+    if (input.value.trim() !== '') {
+        minhaListaDeItem.push({
+            tarefa: input.value,
+            concluida: false
+        });
 
-    input.value = ''
-
-    mostrarTarefa()
+        input.value = '';
+        mostrarTarefa();
+    }
 }
 
 function mostrarTarefa (){
@@ -53,8 +54,16 @@ if (tarefasDoLocalStorage){
     minhaListaDeItem = JSON.parse(tarefasDoLocalStorage)
 }
 mostrarTarefa ()
+
 }
 
+function handleKeyPress(e) {
+    if (e.key === 'Enter') {
+        adicionarNovaTarefa();
+    }
+}
 recarregarTarefas()
 
 button.addEventListener('click', adicionarNovaTarefa)
+input.addEventListener('keypress', handleKeyPress)
+        
